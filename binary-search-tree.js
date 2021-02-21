@@ -111,12 +111,14 @@ class BinarySearchTree {
   }
 }
 
+// 4. What does this program do?
 function tree(t){
   if(!t){
     return 0;
   }
   return tree(t.left) + t.value + tree(t.right);
 }
+// This function recursively adds all of the nodes of a BST together into one sum.
 
 function main() {
   const bst = new BinarySearchTree();
